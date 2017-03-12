@@ -7,9 +7,15 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+        <div>
+          <Row>
+            <Col span={24}>
+              <div className="App-header">
+                <img src={logo} className="App-logo" alt="logo" />
+                <h2>Welcome to React</h2>
+              </div>
+            </Col>
+          </Row>
         </div>
         <div>
           <Row>
