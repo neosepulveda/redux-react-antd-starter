@@ -1,38 +1,23 @@
 import React, { Component } from 'react';
-import { Button, Row, Col } from 'antd';
+import { Icon } from 'antd';
 
-import logo from '../assets/logo.svg';
+import react_logo from '../assets/react_logo.svg';
+import antd_logo from '../assets/antd_logo.svg'
+import redux_logo from '../assets/redux_logo.svg'
 import '../stylesheets/components/App.css';
 
 class App extends Component {
+
   render() {
+    const github_url = "https://github.com/neosepulveda/redux-react-antd-starter";
     return (
-      <div className="App">
-        <div>
-          <Row>
-            <Col span={24}>
-              <div className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <h2>Welcome to React</h2>
-              </div>
-            </Col>
-          </Row>
-        </div>
-        <div>
-          <Row>
-            <Col span={24}>
-              <Button type="primary">If this button is styled, Antd is working</Button>
-            </Col>
-          </Row>
-        </div>
-        <div>
-          <Row>
-            <Col span={24}>
-              <p className="App-intro">
-                To get started, edit <code>src/App.js</code> and save to reload.
-              </p>
-            </Col>
-          </Row>
+      <div className="app">
+        <div className="app-body">
+          <img src={redux_logo} className="app-logo" alt="redux_logo" />
+          <img src={react_logo} className="app-logo" alt="react_logo" />
+          <img src={antd_logo} className="app-logo" alt="antd_logo" />
+          <h2>React + Redux + AntDesign starter</h2>
+          <a href={github_url}><Icon type="github" /> {github_url}</a>
         </div>
       </div>
     );
